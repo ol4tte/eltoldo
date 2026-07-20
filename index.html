@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Toldo — Parrilladas y Comida Típica Chilena desde 1984 | San Bernardo</title>
+
+<!-- ===================================================
+     SEO / META
+     =================================================== -->
+<meta name="description" content="El Toldo es un restaurante tradicional de San Bernardo especializado en parrilladas, pastel de choclo, cazuelas y auténtica comida típica chilena desde 1984.">
+<meta name="keywords" content="El Toldo, restaurante chileno, parrilladas San Bernardo, comida típica chilena, pastel de choclo, cazuelas, García Melín">
+<meta name="author" content="El Toldo García Melín">
+<link rel="canonical" href="https://www.eltoldo.cl">
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:title" content="El Toldo — Tradición chilena, sabores inolvidables">
+<meta property="og:description" content="Auténtica comida típica chilena en un ambiente natural y familiar. Parrilladas premium, pastel de choclo, plateada, cazuelas y mucho más. Desde 1984.">
+<meta property="og:image" content="og-cover.jpg">
+<meta property="og:url" content="https://www.eltoldo.cl">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="El Toldo">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="El Toldo — Tradición chilena, sabores inolvidables">
+<meta name="twitter:description" content="Parrilladas y comida típica chilena en San Bernardo desde 1984.">
+<meta name="twitter:image" content="og-cover.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="icon-dark.png">
+<link rel="apple-touch-icon" href="icon-dark.png">
+
+<!-- Fonts: display serif for headings (mismo espíritu tipográfico del template original)
+     + una sans "Muted Taupe" style para textos de cuerpo -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===================================================
+     LOADER (efecto de entrada, en el espíritu del template original)
+     =================================================== -->
+<div class="loader" id="loader">
+  <img src="icon-dark.png" alt="" class="loader-icon">
+</div>
+
+<!-- ===================================================
+     NAVBAR — transparente, cambia a vidrio (glassmorphism) al hacer scroll
+     =================================================== -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#inicio" class="navbar-logo" aria-label="El Toldo — Inicio">
+      <img src="icon-dark.png" alt="El Toldo" class="navbar-logo-img logo-dark-variant">
+      <img src="icon-cream.png" alt="El Toldo" class="navbar-logo-img logo-cream-variant">
+    </a>
+
+    <nav class="navbar-links" id="navbarLinks">
+      <a href="#historia">Historia</a>
+      <a href="#menu">Menú</a>
+      <a href="#galeria">Galería</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a href="#reservas" class="btn btn-contact navbar-cta">Reservar Mesa</a>
+
+    <button class="navbar-toggle" id="navbarToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================================================
+     1. HERO SECTION
+     =================================================== -->
+<section class="hero" id="inicio">
+  <!-- Imagen de fondo — REEMPLAZAR por foto real de una parrillada -->
+  <div class="hero-bg">
+    <img src="hero-parrillada.jpg" alt="Parrillada chilena El Toldo" loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="fade-in hero-eyebrow" data-delay="0">
+      <img src="icon-cream.png" alt="" class="hero-eyebrow-icon">
+      <span>Parrilladas • Comida Típica Chilena • Desde 1984</span>
+    </div>
+
+    <div class="hero-heading-wrap">
+      <h1 class="hero-heading fade-in" data-delay="150" data-y="40">EL TOLDO</h1>
+    </div>
+
+    <div class="hero-bottom">
+      <p class="hero-tagline fade-in" data-delay="350" data-y="20">
+        Parrilladas y Cocina Tradicional Chilena — Tradición chilena, sabores inolvidables.
+      </p>
+
+      <div class="hero-actions fade-in" data-delay="500" data-y="20">
+        <a href="#reservas" class="btn btn-contact">Reservar Mesa</a>
+        <a href="#menu" class="btn btn-ghost">Ver Menú</a>
+        <a href="#historia" class="btn btn-text">Conocer Nuestra Historia ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue fade-in" data-delay="700">
+    <span></span>
+  </div>
+</section>
+
+<!-- ===================================================
+     2. MARQUEE SECTION — dos filas de imágenes que se desplazan con el scroll
+     =================================================== -->
+<section class="marquee-section" aria-label="Galería destacada">
+  <div class="marquee-row" id="marqueeRow1">
+    <div class="marquee-track" id="marqueeTrack1">
+      <!-- Se repiten x3 vía JS para loop continuo. Reemplazar por fotos reales del restaurante -->
+      <img src="marquee-01.jpg" alt="Plato de El Toldo" loading="lazy">
+      <img src="marquee-02.jpg" alt="Plato de El Toldo" loading="lazy">
+      <img src="marquee-03.jpg" alt="Plato de El Toldo" loading="lazy">
+      <img src="marquee-04.jpg" alt="Plato de El Toldo" loading="lazy">
+      <img src="marquee-05.jpg" alt="Plato de El Toldo" loading="lazy">
+      <img src="marquee-06.jpg" alt="Plato de El Toldo" loading="lazy">
+    </div>
+  </div>
+  <div class="marquee-row" id="marqueeRow2">
+    <div class="marquee-track" id="marqueeTrack2">
+      <img src="marquee-07.jpg" alt="Terraza El Toldo" loading="lazy">
+      <img src="marquee-08.jpg" alt="Terraza El Toldo" loading="lazy">
+      <img src="marquee-09.jpg" alt="Terraza El Toldo" loading="lazy">
+      <img src="marquee-10.jpg" alt="Terraza El Toldo" loading="lazy">
+      <img src="marquee-11.jpg" alt="Terraza El Toldo" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     3. HISTORIA SECTION (equivalente a "About")
+     =================================================== -->
+<section class="historia" id="historia">
+  <img src="deco-hoja-01.png" alt="" class="deco deco-tl fade-in" data-delay="100" data-x="-80" data-duration="900">
+  <img src="deco-lena.png" alt="" class="deco deco-bl fade-in" data-delay="250" data-x="-80" data-duration="900">
+  <img src="deco-hoja-02.png" alt="" class="deco deco-tr fade-in" data-delay="150" data-x="80" data-duration="900">
+  <img src="deco-parrilla.png" alt="" class="deco deco-br fade-in" data-delay="300" data-x="80" data-duration="900">
+
+  <div class="historia-inner">
+    <h2 class="section-heading fade-in" data-y="40">Nuestra Historia</h2>
+
+    <p class="animated-text" id="historiaTexto">
+      La historia de El Toldo comenzó en marzo de 1984 como un pequeño local de comida al paso para viajeros de la carretera. Con el paso de los años fue creciendo hasta convertirse en uno de los restaurantes tradicionales más reconocidos de San Bernardo. En 1991 un incendio destruyó completamente el restaurante. Gracias al esfuerzo de la familia García Melín, amigos y clientes, El Toldo renació más grande y con un nuevo objetivo: ofrecer un lugar único donde disfrutar en familia rodeado de naturaleza. En 2018 adopta el nombre Parrilladas El Toldo, manteniendo la tradición que lo caracteriza hasta el día de hoy.
+    </p>
+
+    <!-- Línea del tiempo -->
+    <div class="timeline">
+      <div class="timeline-item fade-in" data-delay="0">
+        <span class="timeline-year">1984</span>
+        <span class="timeline-label">Inicio del restaurante</span>
+      </div>
+      <div class="timeline-item fade-in" data-delay="100">
+        <span class="timeline-year">1991</span>
+        <span class="timeline-label">Incendio y reconstrucción</span>
+      </div>
+      <div class="timeline-item fade-in" data-delay="200">
+        <span class="timeline-year">2018</span>
+        <span class="timeline-label">Nuevo nombre: Parrilladas El Toldo</span>
+      </div>
+      <div class="timeline-item fade-in" data-delay="300">
+        <span class="timeline-year">Hoy</span>
+        <span class="timeline-label">Actualidad — familia García Melín</span>
+      </div>
+    </div>
+
+    <!-- Imágenes antiguas y actuales -->
+    <div class="historia-imgs">
+      <figure class="fade-in" data-delay="0" data-y="20">
+        <img src="historia-antigua-01.jpg" alt="El Toldo en sus inicios" loading="lazy">
+        <figcaption>El Toldo, primeros años</figcaption>
+      </figure>
+      <figure class="fade-in" data-delay="100" data-y="20">
+        <img src="historia-antigua-02.jpg" alt="Reconstrucción de El Toldo" loading="lazy">
+        <figcaption>Reconstrucción, años 90</figcaption>
+      </figure>
+      <figure class="fade-in" data-delay="200" data-y="20">
+        <img src="historia-actual.jpg" alt="El Toldo en la actualidad" loading="lazy">
+        <figcaption>El Toldo hoy</figcaption>
+      </figure>
+    </div>
+
+    <a href="#reservas" class="btn btn-contact fade-in" data-delay="0">Reservar Mesa</a>
+  </div>
+</section>
+
+<!-- ===================================================
+     4. MENÚ SECTION (equivalente a "Services")
+     =================================================== -->
+<section class="menu-section" id="menu">
+  <h2 class="section-heading section-heading-dark">Menú</h2>
+  <p class="menu-intro fade-in">Sabores que cruzan generaciones. Todos nuestros platos se preparan con productos naturales y receta de siempre.</p>
+
+  <!-- Filtros de categoría -->
+  <div class="menu-filters fade-in" id="menuFilters">
+    <button class="menu-filter active" data-filter="entradas">Entradas</button>
+    <button class="menu-filter" data-filter="parrilladas">Parrilladas</button>
+    <button class="menu-filter" data-filter="platos-chilenos">Platos Chilenos</button>
+    <button class="menu-filter" data-filter="postres">Postres</button>
+    <button class="menu-filter" data-filter="bebidas">Bebidas</button>
+  </div>
+
+  <div class="menu-grid" id="menuGrid">
+
+    <!-- ENTRADAS -->
+    <article class="menu-card" data-category="entradas">
+      <div class="menu-card-img"><img src="menu-pan-amasado.jpg" alt="Pan amasado con pebre" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Pan Amasado con Pebre</h3>
+        <p>Pan amasado casero recién horneado, acompañado de pebre chileno tradicional.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="entradas">
+      <div class="menu-card-img"><img src="menu-empanadas.jpg" alt="Empanadas de pino" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Empanadas de Pino</h3>
+        <p>Empanadas horneadas rellenas de pino tradicional, aceituna, huevo y pasas.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="entradas">
+      <div class="menu-card-img"><img src="menu-palta-reina.jpg" alt="Palta Reina" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Palta Reina</h3>
+        <p>Palta rellena a elección, clásico de la mesa chilena.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PARRILLADAS -->
+    <article class="menu-card" data-category="parrilladas">
+      <div class="menu-card-img"><img src="menu-parrillada-especial.jpg" alt="Parrillada Especial" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Parrillada Especial</h3>
+        <p>Selección de carnes premium a la parrilla, ideal para compartir.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="parrilladas">
+      <div class="menu-card-img"><img src="menu-parrillada-familiar.jpg" alt="Parrillada Familiar" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Parrillada Familiar</h3>
+        <p>Abundante variedad de cortes y embutidos para toda la familia.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="parrilladas">
+      <div class="menu-card-img"><img src="menu-lomo-vetado.jpg" alt="Lomo Vetado" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Lomo Vetado</h3>
+        <p>Corte jugoso a la parrilla, punto justo.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="parrilladas">
+      <div class="menu-card-img"><img src="menu-filete.jpg" alt="Filete" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Filete</h3>
+        <p>Corte tierno a la parrilla, preparado al momento.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="parrilladas">
+      <div class="menu-card-img"><img src="menu-asiento.jpg" alt="Asiento" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Asiento</h3>
+        <p>Corte clásico de la parrilla chilena, con el sabor de siempre.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="parrilladas">
+      <div class="menu-card-img"><img src="menu-punta-picana.jpg" alt="Punta Picana" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Punta Picana</h3>
+        <p>Corte jugoso y sabroso, asado a la parrilla.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PLATOS CHILENOS -->
+    <article class="menu-card" data-category="platos-chilenos">
+      <div class="menu-card-img"><img src="menu-pastel-choclo.jpg" alt="Pastel de Choclo" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Pastel de Choclo</h3>
+        <p>Nuestro plato insignia: choclo dulce, pino y horneado a la perfección.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="platos-chilenos">
+      <div class="menu-card-img"><img src="menu-plateada.jpg" alt="Plateada al jugo" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Plateada al Jugo</h3>
+        <p>Cocción lenta que resalta la ternura y el sabor de la carne.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="platos-chilenos">
+      <div class="menu-card-img"><img src="menu-porotos-granados.jpg" alt="Porotos Granados" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Porotos Granados</h3>
+        <p>Receta casera de temporada, con zapallo, choclo y albahaca.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="platos-chilenos">
+      <div class="menu-card-img"><img src="menu-porotos-mazamorra.jpg" alt="Porotos con Mazamorra" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Porotos con Mazamorra</h3>
+        <p>Clásico de la cocina campesina chilena.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="platos-chilenos">
+      <div class="menu-card-img"><img src="menu-cazuela-vacuno.jpg" alt="Cazuela de Vacuno" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Cazuela de Vacuno</h3>
+        <p>Caldo casero con verduras de estación y un corte generoso de vacuno.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="platos-chilenos">
+      <div class="menu-card-img"><img src="menu-cazuela-ave.jpg" alt="Cazuela de Ave" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Cazuela de Ave</h3>
+        <p>Versión suave y reconfortante de nuestra cazuela casera.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="platos-chilenos">
+      <div class="menu-card-img"><img src="menu-pernil.jpg" alt="Pernil" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Pernil</h3>
+        <p>Cocción lenta hasta lograr una carne suave y jugosa.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="platos-chilenos">
+      <div class="menu-card-img"><img src="menu-arrollado-huaso.jpg" alt="Arrollado Huaso" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Arrollado Huaso</h3>
+        <p>Preparación tradicional de campo, con el sabor de siempre.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="platos-chilenos">
+      <div class="menu-card-img"><img src="menu-chunchules.jpg" alt="Chunchules" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Chunchules</h3>
+        <p>Preparación clásica de asado chileno.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="platos-chilenos">
+      <div class="menu-card-img"><img src="menu-chuletas-cerdo.jpg" alt="Chuletas de Cerdo" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Chuletas de Cerdo</h3>
+        <p>Chuletas a la parrilla, doradas por fuera y jugosas por dentro.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- POSTRES -->
+    <article class="menu-card" data-category="postres">
+      <div class="menu-card-img"><img src="menu-panqueques.jpg" alt="Panqueques Celestinos" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Panqueques Celestinos</h3>
+        <p>Clásico postre chileno relleno de manjar.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="postres">
+      <div class="menu-card-img"><img src="menu-leche-asada.jpg" alt="Leche Asada" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Leche Asada</h3>
+        <p>Postre casero, suave y cremoso.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="postres">
+      <div class="menu-card-img"><img src="menu-mote-huesillos.jpg" alt="Mote con Huesillos" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Mote con Huesillos</h3>
+        <p>Refrescante postre tradicional chileno.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="postres">
+      <div class="menu-card-img"><img src="menu-melon-helado.jpg" alt="Melón con Helado" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Melón con Helado</h3>
+        <p>Fresco y liviano, perfecto para el verano.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- BEBIDAS -->
+    <article class="menu-card" data-category="bebidas">
+      <div class="menu-card-img"><img src="menu-borgona.jpg" alt="Borgoña" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Borgoña</h3>
+        <p>Vino tinto con frutas de estación, receta de la casa.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="bebidas">
+      <div class="menu-card-img"><img src="menu-clery.jpg" alt="Clery" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Clery</h3>
+        <p>Vino blanco con frutas, fresco y suave.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="bebidas">
+      <div class="menu-card-img"><img src="menu-terremoto.jpg" alt="Terremoto" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Terremoto</h3>
+        <p>El clásico trago chileno, pipeño con helado.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="bebidas">
+      <div class="menu-card-img"><img src="menu-limonada.jpg" alt="Limonadas Naturales" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Limonadas Naturales</h3>
+        <p>Preparadas al momento, con menta o jengibre a elección.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="menu-card" data-category="bebidas">
+      <div class="menu-card-img"><img src="menu-vinos.jpg" alt="Vinos" loading="lazy"></div>
+      <div class="menu-card-body">
+        <h3>Vinos</h3>
+        <p>Selección de vinos para acompañar tu parrillada.</p>
+        <div class="menu-card-footer">
+          <span class="menu-price">Consultar precio</span>
+          <a href="#contacto" class="btn btn-outline-sm">Consultar</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===================================================
+     GALERÍA — tipo masonry
+     =================================================== -->
+<section class="galeria" id="galeria">
+  <h2 class="section-heading fade-in">Galería</h2>
+  <p class="galeria-intro fade-in">Un vistazo a nuestros platos, nuestra terraza y el entorno natural que nos rodea.</p>
+
+  <div class="masonry" id="masonryGrid">
+    <div class="masonry-item fade-in" data-delay="0"><img src="galeria-parrillada-01.jpg" alt="Parrillada" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="50"><img src="galeria-pastel-choclo.jpg" alt="Pastel de Choclo" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="100"><img src="galeria-restaurante-01.jpg" alt="Restaurante El Toldo" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="150"><img src="galeria-arboles.jpg" alt="Árboles del jardín" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="200"><img src="galeria-terraza.jpg" alt="Terraza" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="250"><img src="galeria-naturaleza.jpg" alt="Entorno natural" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="300"><img src="galeria-interior.jpg" alt="Interior del restaurante" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="350"><img src="galeria-mesas.jpg" alt="Mesas al aire libre" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="400"><img src="galeria-asados.jpg" alt="Asados en la parrilla" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="450"><img src="galeria-parrillada-02.jpg" alt="Parrillada familiar" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="500"><img src="galeria-restaurante-02.jpg" alt="Salón El Toldo" loading="lazy"></div>
+    <div class="masonry-item fade-in" data-delay="550"><img src="galeria-jardin.jpg" alt="Jardín y áreas verdes" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- ===================================================
+     POR QUÉ ELEGIRNOS
+     =================================================== -->
+<section class="porque" id="porque">
+  <h2 class="section-heading section-heading-dark fade-in">¿Por Qué Elegirnos?</h2>
+
+  <div class="porque-grid">
+    <div class="porque-card fade-in" data-delay="0">
+      <span class="porque-icon">🕰️</span>
+      <h3>Más de 40 Años de Tradición</h3>
+      <p>Desde 1984 manteniendo viva la cocina chilena de siempre.</p>
+    </div>
+    <div class="porque-card fade-in" data-delay="60">
+      <span class="porque-icon">🇨🇱</span>
+      <h3>Comida Chilena Auténtica</h3>
+      <p>Recetas familiares transmitidas por generaciones.</p>
+    </div>
+    <div class="porque-card fade-in" data-delay="120">
+      <span class="porque-icon">🥩</span>
+      <h3>Carnes Premium</h3>
+      <p>Cortes seleccionados, cocinados al punto justo.</p>
+    </div>
+    <div class="porque-card fade-in" data-delay="180">
+      <span class="porque-icon">🌿</span>
+      <h3>Productos Naturales</h3>
+      <p>Ingredientes frescos y de estación.</p>
+    </div>
+    <div class="porque-card fade-in" data-delay="240">
+      <span class="porque-icon">🍞</span>
+      <h3>Pan Amasado Casero</h3>
+      <p>Horneado en casa, todos los días.</p>
+    </div>
+    <div class="porque-card fade-in" data-delay="300">
+      <span class="porque-icon">👨‍👩‍👧‍👦</span>
+      <h3>Ideal para Familias</h3>
+      <p>Un espacio pensado para disfrutar en familia.</p>
+    </div>
+    <div class="porque-card fade-in" data-delay="360">
+      <span class="porque-icon">🌳</span>
+      <h3>Amplias Áreas Verdes</h3>
+      <p>Jardines y terraza rodeados de naturaleza.</p>
+    </div>
+    <div class="porque-card fade-in" data-delay="420">
+      <span class="porque-icon">🏡</span>
+      <h3>Ambiente Campestre</h3>
+      <p>La tranquilidad del campo, cerca de la ciudad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     OPINIONES — carrusel
+     =================================================== -->
+<section class="opiniones" id="opiniones">
+  <div class="opiniones-header fade-in">
+    <h2 class="section-heading">Opiniones</h2>
+    <div class="opiniones-rating">
+      <span class="rating-stars">★★★★★</span>
+      <span class="rating-number">4.4/5</span>
+      <span class="rating-count">Más de 800 opiniones</span>
+    </div>
+  </div>
+
+  <div class="carousel" id="carousel">
+    <div class="carousel-track" id="carouselTrack">
+      <article class="carousel-slide">
+        <span class="carousel-stars">★★★★★</span>
+        <p>"Platos abundantes, excelente pastel de choclo y una cazuela espectacular. Muy recomendable."</p>
+        <cite>Cristian Brotfeld</cite>
+      </article>
+      <article class="carousel-slide">
+        <span class="carousel-stars">★★★★★</span>
+        <p>"Excelente atención y comida deliciosa. Muy buena experiencia."</p>
+        <cite>Fabian Jara</cite>
+      </article>
+      <article class="carousel-slide">
+        <span class="carousel-stars">★★★★★</span>
+        <p>"La atención del garzón fue excelente y la comida realmente representa la tradición chilena."</p>
+        <cite>Jair Torres Fernández</cite>
+      </article>
+    </div>
+
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="carouselPrev" aria-label="Opinión anterior">←</button>
+      <div class="carousel-dots" id="carouselDots"></div>
+      <button class="carousel-btn" id="carouselNext" aria-label="Opinión siguiente">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     RESERVAS
+     =================================================== -->
+<section class="reservas" id="reservas">
+  <div class="reservas-info fade-in" data-x="-40">
+    <h2 class="section-heading">Reservas</h2>
+    <p>Completa el formulario y nuestro equipo confirmará tu reserva a la brevedad. También puedes reservar directo por WhatsApp.</p>
+    <a href="https://wa.me/56933841728?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa%20en%20El%20Toldo." target="_blank" rel="noopener" class="btn btn-contact">Reservar por WhatsApp</a>
+  </div>
+
+  <form class="reservas-form fade-in" id="reservaForm" data-x="40" novalidate>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <span class="form-error" id="err-nombre"></span>
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <span class="form-error" id="err-apellido"></span>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" required>
+        <span class="form-error" id="err-correo"></span>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+56 9 XXXX XXXX" required>
+        <span class="form-error" id="err-telefono"></span>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+        <span class="form-error" id="err-fecha"></span>
+      </div>
+      <div class="form-group">
+        <label for="hora">Hora</label>
+        <input type="time" id="hora" name="hora" min="12:00" max="17:30" required>
+        <span class="form-error" id="err-hora"></span>
+      </div>
+      <div class="form-group">
+        <label for="personas">N° de Personas</label>
+        <input type="number" id="personas" name="personas" min="1" max="40" required>
+        <span class="form-error" id="err-personas"></span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="mensaje">Mensaje (opcional)</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-contact btn-full">Reservar</button>
+    <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<!-- ===================================================
+     CONTACTO
+     =================================================== -->
+<section class="contacto" id="contacto">
+  <h2 class="section-heading section-heading-dark fade-in">Contacto</h2>
+
+  <div class="contacto-grid">
+    <div class="contacto-info fade-in">
+      <ul class="contacto-list">
+        <li>
+          <strong>Dirección</strong>
+          <span>Av. Pdte. Jorge Alessandri Rodríguez 600, San Bernardo, Región Metropolitana, Chile</span>
+        </li>
+        <li>
+          <strong>Horario</strong>
+          <span>Domingo a Viernes, 12:00 a 17:30 hrs</span>
+        </li>
+        <li>
+          <strong>Teléfono</strong>
+          <span>+56 9 3384 1728</span>
+        </li>
+        <li>
+          <strong>Correo</strong>
+          <!-- <span>reservas@eltoldo.cl</span> -->
+        </li>
+      </ul>
+
+      <div class="contacto-actions">
+        <a href="https://wa.me/56933841728?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa%20en%20El%20Toldo." target="_blank" rel="noopener" class="btn btn-contact">WhatsApp</a>
+        <a href="tel:+56933841728" class="btn btn-outline">Llamar</a>
+        <!-- <a href="mailto:reservas@eltoldo.cl" class="btn btn-outline">Enviar Correo</a> -->
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Pdte.+Jorge+Alessandri+Rodr%C3%ADguez+600,+San+Bernardo" target="_blank" rel="noopener" class="btn btn-outline">Cómo Llegar</a>
+      </div>
+    </div>
+
+    <div class="contacto-mapa fade-in">
+      <!-- Reemplazar el src del iframe por el embed real de Google Maps -->
+      <iframe
+        src="https://www.google.com/maps?q=Av.+Pdte.+Jorge+Alessandri+Rodr%C3%ADguez+600,+San+Bernardo,+Chile&output=embed"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación El Toldo en el mapa"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     FOOTER
+     =================================================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo-full-cream.png" alt="El Toldo — García Melín" class="footer-logo">
+      <p>Tradición chilena, sabores inolvidables. Desde 1984, la familia García Melín recibe a sus visitas con la mejor comida típica chilena.</p>
+      <div class="footer-social">
+        <!-- Reemplazar por enlaces reales -->
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Horario</h4>
+      <p>Domingo a Viernes<br>12:00 a 17:30 hrs</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p>+56 9 3384 1728<br>
+      <!-- reservas@eltoldo.cl -->
+      Av. Pdte. Jorge Alessandri Rodríguez 600, San Bernardo</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <a href="#historia">Historia</a>
+      <a href="#menu">Menú</a>
+      <a href="#galeria">Galería</a>
+      <a href="#reservas">Reservas</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> El Toldo García Melín. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ===================================================
+     BOTONES FLOTANTES
+     =================================================== -->
+<a href="https://wa.me/56933841728?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa%20en%20El%20Toldo." target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="Escríbenos por WhatsApp" id="floatWhatsapp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.7 4.607 1.907 6.47L4 29l7.723-1.868A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.75a9.7 9.7 0 0 1-4.95-1.36l-.355-.21-4.584 1.11 1.14-4.47-.232-.366A9.71 9.71 0 0 1 6.25 15c0-5.385 4.366-9.75 9.751-9.75S25.75 9.615 25.75 15 21.386 24.75 16.001 24.75zm5.34-7.302c-.293-.147-1.73-.854-1.997-.951-.267-.098-.462-.147-.658.147-.195.293-.755.951-.926 1.146-.17.195-.34.22-.633.073-.293-.147-1.238-.456-2.359-1.454-.872-.778-1.462-1.738-1.633-2.031-.17-.293-.018-.452.129-.598.132-.132.293-.343.44-.514.147-.171.195-.293.293-.488.098-.196.049-.367-.024-.514-.073-.147-.658-1.586-.902-2.172-.238-.57-.48-.494-.658-.503l-.561-.01c-.196 0-.514.073-.783.367-.269.293-1.026 1.004-1.026 2.45s1.051 2.842 1.198 3.038c.147.195 2.07 3.163 5.017 4.435.701.303 1.248.484 1.675.62.704.224 1.344.192 1.85.117.564-.084 1.73-.708 1.973-1.39.244-.684.244-1.27.171-1.39-.073-.122-.269-.196-.562-.343z"/></svg>
+</a>
+
+<button class="float-btn float-top" id="btnTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
